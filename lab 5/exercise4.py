@@ -4,6 +4,9 @@ To generate random number use random module
 import random
 random.randint(1,3)
 '''
+
+print ("This program that plays the game of Rock, Paper, Scissors with the user.  ")
+
 import random
 
 def choiceNum(Num):
@@ -33,7 +36,7 @@ print("""1 = Rock
 while True:
     try:
         input_num = int(input("Please select the number:"))
-        if input_num > generate_ans not in [1, 2, 3]:
+        if input_num not in [1, 2, 3]:
             print("Invalid input. Please select the number between 1 , 2 and 3 only.")
             continue
     except ValueError:
@@ -41,11 +44,9 @@ while True:
         continue
 
     generate_ans = random.randint(1,3)
+    
     user_choice = choiceNum(input_num)
     computer_choice = choiceNum(generate_ans)
-
-    # user_choiceNumName = choiceNum(user_choiceNum)
-    # computer_choiceNumName = choiceNum(computer_choiceNum)
 
     print(f"Your choice: {user_choice}")
     print(f"Computer choice: {computer_choice}")
@@ -53,7 +54,11 @@ while True:
     result = winner_game(user_choice, computer_choice)
     print(result)
 
-    play_again = input("Do you want")
+    play_again = input("Do you want to play again? (y/n): ")
+    if play_again != "y":
+        print("Thanks for playing!")
+        break
+
 
 
     

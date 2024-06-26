@@ -19,3 +19,9 @@ Arguments :
 Commands
 Number of arguments is 1
 '''
+
+import sys
+number = sys.argv[1:]
+print ("Arguments:",number)
+print (f"Number of arguments is {len(number)}")
+

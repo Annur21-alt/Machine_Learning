@@ -4,14 +4,18 @@
 
 print ("This program will calculates the sum of the first n terms of the harmonic series.")
 
-n = int(input("Please enter the integer:"))
 def harmonic_series (n):
-    sum = 0
-    for i in range(1,n+1):
-        sum = sum + 1/i
-        return sum
+    sum = 0.0
+    for i in range(1, n + 1):
+        sum = sum + 1 / i
+    return sum
     
-harmonic_series()
+n = int(input("Please enter the number of terms (n):"))
+
+total_harmonicSum = harmonic_series(n)
+
+print(f"The sum of the first {n} terms of the harmonic series is: {total_harmonicSum}")
+
 
 
 

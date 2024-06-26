@@ -29,6 +29,5 @@ Number of weekend hours is 15
 
 
 total_salary_paid= int(input ("Enter the total salary paid\n"))
-weekday_hour = 
-weekend_hour = 
+
  

@@ -26,6 +26,12 @@ Enter the number of square tiles available
 Area of the largest possible square is 100sqcm
 '''
 
-side_in_cm = int(input = ("Enter the side in cm of a square tile\n"))
+side_in_cm = int(input("Enter the side in cm of a square tile\n"))
 n = int(input = ("Enter the number of square tiles available\n"))
+
+max_side_square = int(n ** 0.5)
+
+largest_possible_square = (max_side_square * side_in_cm) ** 2
+
+print(f"Area of the largest possible square is {largest_possible_square}sqcm")
 

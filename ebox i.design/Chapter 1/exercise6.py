@@ -28,6 +28,13 @@ Number of weekend hours is 15
 '''
 
 
-total_salary_paid= int(input ("Enter the total salary paid\n"))
+total_salary_paid = float(input ("Enter the total salary paid\n"))
 
+number_weekend_hours = (total_salary_paid - 800) / 130
+
+number_weekday_hours = (number_weekend_hours + 10)
+
+print(f"Number of weekday hours is {int(number_weekday_hours)}")
+
+print(f"Number of weekend hours is {int(number_weekend_hours)}")
  

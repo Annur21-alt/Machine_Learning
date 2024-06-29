@@ -18,6 +18,6 @@ number = int(input("Please enter the number:"))
 # using def function
 def multiplication_table(number):
     for i in range (1,13):
-        print(f"{number} x {i} ={number * i}")
+        print(f"{i} x {number} = {number * i}")
 
 multiplication_table(number)

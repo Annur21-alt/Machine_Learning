@@ -22,3 +22,10 @@ Sample Input 2:
 Sample Output 2:
 Not a Lucky Winner
 '''
+
+ticket_number = int(input())
+last_digit = ticket_number % 10
+if last_digit == 3 or last_digit == 8:
+    print ("Lucky Winner")
+else:
+    print("Not a Lucky Winner")

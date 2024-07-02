@@ -39,3 +39,19 @@ Sample Output 2:
 Standard Ticket
 '''
 
+# Read input character from user
+ticket_char = input().strip()
+
+# Determine and print the corresponding ticket type
+if ticket_char == 'E' or ticket_char == 'e':
+    print('Early Bird Ticket')
+elif ticket_char == 'D' or ticket_char == 'd':
+    print('Discount Ticket')
+elif ticket_char == 'V' or ticket_char == 'v':
+    print('VIP Ticket')
+elif ticket_char == 'S' or ticket_char == 's':
+    print('Standard Ticket')
+elif ticket_char == 'C' or ticket_char == 'c':
+    print('Child Ticket')
+else:
+    print('Invalid Ticket Type')

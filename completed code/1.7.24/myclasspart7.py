@@ -49,9 +49,16 @@ print(BankCard.__mro__)
 # BIGGEST CONCLUSION
 # Every class we create in python is inherited from a class called object
 # class object:
-#   def __init__
+#   def __init__():
+#       pass
+#   def __str__():
+#        return (memory address)
 
-class Student:
+#which print by print function
+
+
+#class Student(object):
+class Student():
     def __str__(self):
         return "Student"
 
@@ -62,6 +69,8 @@ class Alumni(Student):
 
 alumni = Alumni()
 print(alumni)
+
+
 
 
 

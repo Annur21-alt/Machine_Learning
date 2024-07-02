@@ -25,6 +25,7 @@ def getGender (name):
         return Female()
     
 
+# Python dynamically set the data type
 gender = getGender ("Khairi A/L Abu Bakar")
 gender.doCarryObjects()
 print (type(Gender))

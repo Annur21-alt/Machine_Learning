@@ -11,5 +11,15 @@ filename = "fruits.txt"
 #    pass
 #else:
 #    open(filename, 'xt')
-if not exists(filename):
-    open(filename,"xt")
+def createFile(filename):
+    if not exists(filename):
+        try:
+            filehandler = open(filename,"xt")
+        except Exception as e:
+            print("Something went wrong when we create the file:", e)
+        finally:
+            filehandler.close()
+
+
+filename = "fruits.txt"
+createFile(filename)

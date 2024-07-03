@@ -23,7 +23,7 @@ def compress_string(s):
     # Return the original string if compressed string is not smaller
     return compressed_string if len(compressed_string) < len(s) else s
 
-# Example usage
-input_string = "aabcccccaaa"
+# Example usage with user input
+input_string = input("Enter a string to compress: ")
 compressed_string = compress_string(input_string)
-print(compressed_string)  # Output: a2b1c5a3
+print("Compressed string:", compressed_string)

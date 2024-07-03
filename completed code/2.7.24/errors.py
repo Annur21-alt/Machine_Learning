@@ -1,4 +1,4 @@
-x = 11
+# x = 11
 
 # Syntax Error
 # if (x % 2 == 0):
@@ -17,9 +17,19 @@ try:
     # then you must place this code inside a block called
     # try except
     principle = int(input("Principle: "))
-except:
-    # when that error occur what we must do
+except ValueError:
+    #when that error occur what we must do
     print("Principle amount must be an Integer")
+
+except Exception as e:
+    print ("SOmenthing went wrong",e)
+
+else:
+    print("All is well")
+
+finally:
+    print("Thank you!")
+    # The code inside this finally block will always gets executed
 
 # The program does not get terminated abnormally
 

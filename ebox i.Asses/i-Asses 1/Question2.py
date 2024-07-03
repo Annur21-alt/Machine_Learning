@@ -23,10 +23,12 @@ Sample Input 2:
 S 6
 S 5
 H 5
-'''
+
 
 Sample Output 2:
 No Bonanza# Read the three cards
+'''
+
 card1 = input().strip().split()
 card2 = input().strip().split()
 card3 = input().strip().split()

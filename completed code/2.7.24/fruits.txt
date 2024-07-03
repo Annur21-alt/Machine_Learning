@@ -1,0 +1,7 @@
+Product|Quality|Price
+laptop1|1|2887.9
+laptop|1|2887.9
+Smartphone|1|789.9
+laptop|1|980.9
+smart|1|230.7
+test|1|23.8

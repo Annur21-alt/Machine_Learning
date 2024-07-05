@@ -5,3 +5,29 @@
 # Your task is to figure out if a sentence is a pangram.
 
 
+print("This program will figure out if a sentence is a pangram")
+
+def isPangram(sentence):
+    # sentence to lowercase
+    sentence = sentence.lower()
+
+    # set to store unique letters
+    letters = set()
+
+    # iterate through each character
+    for character in sentence:
+
+        # check the condition all 26 letters
+        if 'a' <= character <= 'z':
+            letters.add(character)
+
+    return len(letters) == 26
+
+#user input
+sentence = input("Please enter the sentence:")
+
+# check sentence
+if isPangram(sentence):
+    print("The sentence is pangram sentence.")
+else:
+    print("The sentence is a not pangram sentence.")
